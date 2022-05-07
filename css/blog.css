@@ -1,0 +1,336 @@
+.index {
+  width: 100%;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  Z-index: 999;
+  background-color: white;
+}
+
+.index-item {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 15px;
+  flex-direction: row;
+  font-weight: bold;
+  font-family: Arial;
+  color: black;
+  margin-top: 10px;
+}
+
+.index-item a {
+  text-decoration: none;
+  color: black;
+}
+
+.index-item li {
+  margin: 10px;
+  margin-top: 18px;
+}
+
+
+.index-logo {
+  width: 50px;
+  height: 20px;
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+.nav {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  left: -100%;
+  background: #eee;
+  transition: .7s;
+  text-align: center;
+}
+
+.nav ul {
+  padding-top: 80px;
+}
+
+.nav ul li {
+  list-style-type: none;
+  margin-top: 50px;
+}
+
+.menu {
+  display: flex;
+  width: 36px;
+  height: 32px;
+  cursor: pointer;
+  position: relative;
+  left: 90%;
+  top: -30px;
+  display: none;
+}
+
+@media screen and (max-width:768px) {
+
+  .index-item {
+    display: none;
+  }
+
+  .menu_line--top {
+    display: block;
+  }
+
+  .menu_line--middle {
+    display: block;
+  }
+
+  .menu_line--bottom {
+    display: block;
+  }
+
+  .menu {
+    display: block;
+  }
+}
+
+.menu_line--top,
+.menu_line--middle,
+.menu_line--bottom {
+  display: inline-block;
+  width: 100%;
+  height: 4px;
+  background-color: #000;
+  position: absolute;
+  transition: 0.5s;
+}
+
+.menu_line--top {
+  top: 0;
+}
+
+.menu_line--middle {
+  top: 14px;
+}
+
+.menu_line--bottom {
+  bottom: 0;
+}
+
+.menu.open span:nth-last-of-type(1) {
+  top: 14px;
+  transform: rotate(45deg);
+}
+
+.menu.open span:nth-last-of-type(2) {
+  opacity: 0;
+}
+
+.menu.open span:nth-last-of-type(3) {
+  top: 14px;
+  transform: rotate(-45deg);
+}
+
+.in {
+  transform: translateX(100%);
+}
+
+.main-picure {
+  width: 100%;
+  height: 250px;
+  text-align: center;
+}
+
+.main {
+  margin-top: 5px;
+  position: relative;
+  margin-bottom: 90px;
+}
+
+.main-title {
+  position: absolute;
+  font-size: 25px;
+  font-weight: bold;
+  top: 45%;
+  left: 43%;
+  color: white;
+}
+
+.blog-main {
+  margin: 10px;
+}
+
+.main-sub1 {
+  width: 272px;
+  height: 163px;
+}
+
+.main-blog {
+  margin-left: -55px;
+}
+
+.blog-date1 {
+  margin-top: 10px;
+}
+
+.blog-date {
+  margin-top: 10px;
+}
+
+.blog-title1 {
+  margin-top: 10px;
+}
+
+.blog-title {
+  margin-top: 10px;
+}
+
+.main-sub2 {
+  width: 272px;
+  height: 163px;
+}
+
+.main-sub3 {
+  width: 272px;
+  height: 162px;
+}
+
+.sub-main1 {
+  margin-left: -35px;
+}
+
+.sub-main2 {
+  margin-left: -10px;
+}
+
+.sub-main {
+  margin-left: -40px;
+}
+
+.date-blog1 {
+  margin-left: -40px;
+}
+
+.date-blog2 {
+  margin-left: -10px;
+}
+
+.title-blog2 {
+  margin-left: -10px;
+}
+
+.blog {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (max-width:768px) {
+  .blog {
+    display: block;
+  }
+}
+
+.company {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (max-width:768px) {
+  .company {
+    display: block;
+  }
+}
+
+.sub-main1 {
+  width: 272px;
+  height: 163px;
+}
+
+.sub-main2 {
+  width: 272px;
+  height: 163px;
+}
+
+.sub-main3 {
+  width: 272px;
+  height: 163px;
+}
+
+.date-blog1 {
+  margin-top: 10px;
+}
+
+.sub-main1 {
+  margin-top: 10px;
+}
+
+.date-blog2 {
+  margin-top: 10px;
+}
+
+.sub-main2 {
+  margin-top: 10px;
+}
+
+.date-blog3 {
+  margin-top: 10px;
+}
+
+.sub-main3 {
+  margin-top: 10px;
+}
+
+.contact {
+  background-color: aliceblue;
+  margin-top: -90px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.contact-main {
+  font-size: 30px;
+  text-align: center;
+}
+
+.contact-sub {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+  padding: 8px 60px 8px 60px;
+  margin-top: 50px;
+  background-color: red;
+  margin-left: 43%;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: black;
+}
+
+.footer-list {
+  list-style: none;
+  display: flex;
+}
+
+.footer-list a {
+  text-decoration: none;
+  margin: 5px;
+  color: white;
+}
+
+.footer-small {
+  margin-left: 30px;
+  color: white;
+}
